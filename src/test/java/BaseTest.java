@@ -8,7 +8,11 @@ public class BaseTest {
     protected WebDriver driver;
     protected HomePage homePage;
 
-    @BeforeTest
+    @BeforeTest(description = """
+            Steps:
+            Step1: Go to Magento Software URL
+            Step2: maximize window
+            """)
     public void setUp() {
         driver = new FirefoxDriver();
         homePage = new HomePage(driver);

@@ -48,7 +48,7 @@ public class LoginPage extends BasePage {
         setText(inputPasswordField, Constants.INCORRECT_PASSWORD.getValue());
     }
 
-    public void clickLoginSummitButton() {
+    public void clickLoginSubmitButton() {
         clickElement(loginSummitButton);
     }
 
@@ -82,7 +82,7 @@ public class LoginPage extends BasePage {
         inputEmail();
         inputPassword();
         Utils.scroll(driver, 0, 500);
-        clickLoginSummitButton();
+        clickLoginSubmitButton();
         Utils.waitInSeconds(2);
         checkIfLoginIsCompleted();
     }
